@@ -3,13 +3,17 @@ using System.Collections;
 
 public class Health : MonoBehaviour 
 {
+    public Spawner SceneSpawner;
+
     public int MaxHealth;
     [HideInInspector]
     public float CurrentHealth;
 
-    [Tooltip("Remove on Death after Removedelay")]
+    public bool Enemy = false;
+
+    [Tooltip("Remove on Death after RemoveDelay")]
     public bool RemoveOnDeath = true;
-    [Tooltip("Start PArticcleEffect after ParticleDelay")]
+    [Tooltip("Start ParticleEffect after ParticleDelay")]
     public bool CreateParticle = true;
     public bool RagdollOnDeath = true;
 
@@ -65,6 +69,9 @@ public class Health : MonoBehaviour
 
     public void Dead()
     {
+        if (Enemy)
+            SceneSpawner.AliveEnemys.Remove(this.gameObject);
+
         if (RagdollOnDeath)
         {
             //ToDoooooooooooooooooooo
