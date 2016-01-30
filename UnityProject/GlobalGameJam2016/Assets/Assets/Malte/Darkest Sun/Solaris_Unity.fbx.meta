@@ -1,0 +1,185 @@
+fileFormatVersion: 2
+guid: 7d170be01fc79644994c041bd8f30894
+timeCreated: 1454173977
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: Chest
+    100002: Head
+    100004: Head_end
+    100006: hip_leg
+    100008: joint20
+    100010: joint20 1
+    100012: joint21
+    100014: joint21 1
+    100016: joint25
+    100018: joint25 1
+    100020: joint26
+    100022: joint26 1
+    100024: l_ankle
+    100026: l_ball
+    100028: l_clav
+    100030: l_elbow
+    100032: l_hand
+    100034: l_knee
+    100036: l_Leg
+    100038: l_middle1
+    100040: l_middle2
+    100042: l_middle3
+    100044: l_pinky1
+    100046: l_pinky2
+    100048: l_pinky3
+    100050: l_shoulder
+    100052: l_thumb1
+    100054: l_thumb2
+    100056: l_thumb3
+    100058: l_toe
+    100060: neck
+    100062: polySurface141
+    100064: r_ankle
+    100066: r_ball
+    100068: r_clav
+    100070: r_elbow
+    100072: r_hand
+    100074: r_knee
+    100076: r_Leg
+    100078: r_middle1
+    100080: r_middle2
+    100082: r_middle3
+    100084: r_pinky1
+    100086: r_pinky2
+    100088: r_pinky3
+    100090: r_shoulder
+    100092: r_thumb1
+    100094: r_thumb2
+    100096: r_thumb3
+    100098: r_toe
+    100100: Solaris
+    100102: Solaris_Girl
+    100104: //RootNode
+    100106: spine1
+    100108: Spine2
+    400000: Chest
+    400002: Head
+    400004: Head_end
+    400006: hip_leg
+    400008: joint20
+    400010: joint20 1
+    400012: joint21
+    400014: joint21 1
+    400016: joint25
+    400018: joint25 1
+    400020: joint26
+    400022: joint26 1
+    400024: l_ankle
+    400026: l_ball
+    400028: l_clav
+    400030: l_elbow
+    400032: l_hand
+    400034: l_knee
+    400036: l_Leg
+    400038: l_middle1
+    400040: l_middle2
+    400042: l_middle3
+    400044: l_pinky1
+    400046: l_pinky2
+    400048: l_pinky3
+    400050: l_shoulder
+    400052: l_thumb1
+    400054: l_thumb2
+    400056: l_thumb3
+    400058: l_toe
+    400060: neck
+    400062: polySurface141
+    400064: r_ankle
+    400066: r_ball
+    400068: r_clav
+    400070: r_elbow
+    400072: r_hand
+    400074: r_knee
+    400076: r_Leg
+    400078: r_middle1
+    400080: r_middle2
+    400082: r_middle3
+    400084: r_pinky1
+    400086: r_pinky2
+    400088: r_pinky3
+    400090: r_shoulder
+    400092: r_thumb1
+    400094: r_thumb2
+    400096: r_thumb3
+    400098: r_toe
+    400100: Solaris
+    400102: Solaris_Girl
+    400104: //RootNode
+    400106: spine1
+    400108: Spine2
+    4300000: Solaris
+    7400000: Take 001
+    9500000: //RootNode
+    13700000: Solaris
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleRotations: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
