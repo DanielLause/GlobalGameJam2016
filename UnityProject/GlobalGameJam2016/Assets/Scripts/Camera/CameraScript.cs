@@ -53,7 +53,6 @@ public class CameraScript : MonoBehaviour
 
         if (Physics.Raycast(ray, out hit, Vector3.Distance(myTransform.position, CameraRotationPivot.position)))
         {
-            print(hit.transform.gameObject.name);
             if (hit.transform.gameObject != CameraRotationPivot.gameObject)
                 Distance = Mathf.Clamp(hit.distance, MinDistance, MaxDistance);
             return;
