@@ -13,6 +13,7 @@ public class Spawner : MonoBehaviour
     [Tooltip("Fire this to start a Wave")]
     public bool StartSpawning = false;
 
+    [HideInInspector]
     public Wave CurrentWave;
 
     public List<Transform> SpawnPositions = new List<Transform>();
