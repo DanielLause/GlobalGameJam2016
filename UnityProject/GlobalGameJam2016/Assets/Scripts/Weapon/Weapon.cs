@@ -1,14 +1,22 @@
+<<<<<<< HEAD
 ﻿
 using UnityEngine;
 using System.Collections;
 
 public class Weapon : MonoBehaviour
+=======
+﻿using UnityEngine;
+using System.Collections;
+
+public class Weapon : MonoBehaviour 
+>>>>>>> e8ee4ce1d78ad2fe17179b1d3b24547f83da7abc
 {
     public bool ShowLaser;
 
     public float Damage;
     public float Delay = 0.2f;
 
+<<<<<<< HEAD
     public float RotationSensivity;
     public float MaxYRotation = 100;
     public float MinYRotation = 0;
@@ -75,6 +83,33 @@ public class Weapon : MonoBehaviour
         TransFormToRotateFrom.LookAt(target);
 
     }
+=======
+    public GameObject ImpactObject;
+
+    private Transform myTransform;
+    private ParticleSystem shootParticle;
+    private AudioSource sound;
+    private LineRenderer lineRenderer;
+
+    private bool canShoot = true;
+
+	void Awake () 
+    {
+        lineRenderer = GetComponent<LineRenderer>();
+        myTransform = GetComponent<Transform>();
+        shootParticle = GetComponent<ParticleSystem>();
+        sound = GetComponent<AudioSource>();
+        sound.playOnAwake = false;
+	}
+	
+	void Update () 
+    {
+        RenderLaser();
+        Shoot();
+        ShowTraycers();
+        PlaySound();
+	}
+>>>>>>> e8ee4ce1d78ad2fe17179b1d3b24547f83da7abc
 
     private void RenderLaser()
     {
@@ -123,6 +158,7 @@ public class Weapon : MonoBehaviour
 
         if (canShoot && input == 1)
         {
+<<<<<<< HEAD
             if (!playSound)
             {
                 StartCoroutine(SoundDelay());
@@ -137,6 +173,13 @@ public class Weapon : MonoBehaviour
             sound.Stop();
             playSound = false;
         }
+=======
+            if (!sound.isPlaying)
+                sound.Play();
+        }
+        else
+            sound.Stop();
+>>>>>>> e8ee4ce1d78ad2fe17179b1d3b24547f83da7abc
     }
 
     IEnumerator ShootTimer()
@@ -152,13 +195,19 @@ public class Weapon : MonoBehaviour
 
         if (input == 1)
         {
+<<<<<<< HEAD
             Animator.SetInteger("Shoot", 1);
             StartCoroutine(AnimationDelay());
+=======
+            if (!shootParticle.isPlaying)
+                shootParticle.Play();
+>>>>>>> e8ee4ce1d78ad2fe17179b1d3b24547f83da7abc
         }
         else
         {
             if (shootParticle.isPlaying)
                 shootParticle.Stop();
+<<<<<<< HEAD
             Shooting = false;
             Animator.SetInteger("Shoot", 0);
         }
@@ -185,3 +234,8 @@ public class Weapon : MonoBehaviour
         StartCoroutine(ShootTimer());
     }
 }
+=======
+        }
+    }
+}
+>>>>>>> e8ee4ce1d78ad2fe17179b1d3b24547f83da7abc

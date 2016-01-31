@@ -16,6 +16,7 @@ public class Movement : MonoBehaviour
     [HideInInspector]
     public bool CanRotate = true;
 
+    private Animator animator;
     private CharacterController controller;
     private Transform myTransform;
     
@@ -27,12 +28,14 @@ public class Movement : MonoBehaviour
 
 	void Start () 
     {
+        animator = GetComponent<Animator>();
         controller = GetComponent<CharacterController>();
         myTransform = GetComponent<Transform>();
 	}
 
 	void Update () 
     {
+        //animator.SetFloat("MoveSpeed", Speed);
         Jump();
         Move();
         Rotate();
