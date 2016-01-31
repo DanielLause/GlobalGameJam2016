@@ -5,7 +5,7 @@ using System.Collections.Generic;
 public class Spawner : MonoBehaviour 
 {
     [HideInInspector]
-    public bool Spawning = false;
+    public bool Spawning = true;
     [Tooltip("If Checked it Chooses Random Transforms to Spawn at, if not it chooses them by order")]
     public bool SpawnRandomOrder = true;
     [Tooltip("If checked it Chooses Random Enemy from The Enemys list, if not it chooses the first")]
@@ -13,6 +13,7 @@ public class Spawner : MonoBehaviour
     [Tooltip("Fire this to start a Wave")]
     public bool StartSpawning = false;
 
+    [HideInInspector]
     public Wave CurrentWave;
 
     public List<Transform> SpawnPositions = new List<Transform>();
@@ -62,11 +63,8 @@ public class Spawner : MonoBehaviour
     IEnumerator SpawnTimer()
     {
         yield return new WaitForSeconds(CurrentWave.SpawnDelay);
-        if (Spawning)
-        {
             StartCoroutine(SpawnTimer());
             Spawn();
-        }
     }
 
     private void Spawn()
